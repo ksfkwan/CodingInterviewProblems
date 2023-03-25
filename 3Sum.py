@@ -24,7 +24,7 @@ class Solution:
                 elif integers[left] + integers[right] > 0 - integers[index]:
                     right -= 1
                 else:
-                    result.append([integers[index], integers[left], integers[right]]) # After a triplet is appended, we try to incease the numeric value of its first element or that of its second.
+                    result.append([integers[index], integers[left], integers[right]]) # After a triplet is appended, we try our best to incease the numeric value of its first element or that of its second.
                     left += 1 # The other pairs and the one we were just looking at are either duplicates or smaller than the target.
                     right -= 1 # The other pairs are either duplicates or greater than the target.
                     while integers[left] == integers[left - 1] and left < right:
