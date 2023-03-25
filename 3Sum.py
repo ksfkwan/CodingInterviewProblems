@@ -27,6 +27,7 @@ class Solution:
                     result.append([integers[index], integers[left], integers[right]]) # After a triplet is appended, we try our best to incease the numeric value of its first element or that of its second.
                     left += 1 # The other pairs and the one we were just looking at are either duplicates or smaller than the target.
                     right -= 1 # The other pairs are either duplicates or greater than the target.
+                    # We must move on if there is less than or equal to one integer in between the two integers.
                     while integers[left] == integers[left - 1] and left < right:
                         left += 1 # The pairs are either duplicates or smaller than the target.
         return result
