@@ -1,7 +1,7 @@
 '''
 heights[i] >= 0 and len(heights) >= 2.
 Notice that we are only supposed to return the maximum amount.
-Think algebraically.
+Think algebraically and visually.
 '''
 
 class Solution:
