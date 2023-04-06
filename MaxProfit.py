@@ -16,7 +16,7 @@ class Solution:
             if right < left:
                 left = right
             # If p(n) < p(m), eliminate (p(m), p(n)), ..., (p(m), p(n + k)), ..., (p(n - 1), p(n + k)), where n + k + 1 = len(prices).
-            # All the eliminated profits must be less than or equal to those that have been or will be considered.
+            # For any eliminated profit (a, b), there exists a profit (c, d) that has been or will be considered s.t. (a, b) <= (c, d).
             result = max(result, right - left)
         return result
 
