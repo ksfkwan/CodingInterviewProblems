@@ -7,7 +7,7 @@ Note that we are to return the longest length only and there is a difference bet
 
 class Solution:
     def CharacterReplacement(self, s: str, k: int) -> int:
-        print(f's, k = {s}, {k}\n')
+        # print(f's, k = {s}, {k}\n')
         dictionary = {}
         frequency = 0
         left = 0
@@ -23,7 +23,7 @@ class Solution:
                 left += 1
             
             result = max(result, right - left + 1)
-            print(f'left, right = {left}, {right}\ndictionary, frequency, result = {dictionary}, {frequency}, {result}\n')
+            # print(f'left, right = {left}, {right}\ndictionary, frequency, result = {dictionary}, {frequency}, {result}\n')
         return result
 
 Solution().CharacterReplacement('ADABACDAAAA', 2)
