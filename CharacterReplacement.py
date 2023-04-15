@@ -15,7 +15,7 @@ class Solution:
         for right in range(len(s)):
             dictionary[s[right]] = 1 + dictionary.get(s[right], 0)
             frequency = max(frequency, dictionary[s[right]])
-            # It increases by 1 if the next letter is one of the most frequent letters in the previous substring and stays the same otherwise.
+            
 
             if (right - left + 1) - frequency > k:
             # If (right - left + 1) - frequency <= k, there is a chance that the current substring can be changed into one consisting of letters of a kind, with no operations left.
