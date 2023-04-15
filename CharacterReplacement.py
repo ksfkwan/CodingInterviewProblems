@@ -1,6 +1,6 @@
 '''
 You are given a non-empty string consisting only of uppercase letters and a non-negative integer less than or equal to the result of the string.
-The algo shifts the current window if extending it does not work. The maximum frequency at the time remains unchanged if that is the case.
+The algo shifts the current window if extending it does not increase the frequency.
 
 Note that we are to return the longest length only and there is a difference between a valid length and a valid window.
 '''
