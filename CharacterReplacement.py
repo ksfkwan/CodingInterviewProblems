@@ -12,7 +12,7 @@ class Solution:
         frequency = 0
         left = 0
         result = 0
-        for right in range(len(s)):
+        for right in range(len(s)): # The first iteration is trivial.
             dictionary[s[right]] = 1 + dictionary.get(s[right], 0)
             frequency = max(frequency, dictionary[s[right]])
             
