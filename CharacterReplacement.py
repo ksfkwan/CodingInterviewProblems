@@ -14,7 +14,7 @@ class Solution:
         result = 0
         for right in range(len(s)): # The first iteration is trivial, and the next letter if it exists is either one of the most frequent letters in the preceding window or not. 
             dictionary[s[right]] = 1 + dictionary.get(s[right], 0)
-            frequency = max(frequency, dictionary[s[right]])
+            frequency = max(frequency, dictionary[s[right]]) # frequency <= right - left + 1
             
 
             if (right - left + 1) - frequency > k:
