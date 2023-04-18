@@ -22,8 +22,11 @@ class Solution:
                 dictionary[s[left]] -= 1
                 left += 1
             
-            result = max(result, right - left + 1) # The line of code is run regardless.
+            result = max(result, right - left + 1) # This line of code is executed regardless.
             # print(f'left, right = {left}, {right}\ndictionary, frequency, result = {dictionary}, {frequency}, {result}\n')
         return result
 
-Solution().CharacterReplacement('ADABACDAAAA', 2)
+'''
+Try 'ADABACDAAAA'.
+To have a better understanding of an algorithm in the future, you may want to think about how it is better than another one.
+'''
