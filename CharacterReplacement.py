@@ -2,7 +2,7 @@
 You are given a non-empty string consisting only of uppercase letters and a non-negative integer less than or equal to the result of the string. You can choose any character of the string and change it to any other uppercase character at most k times.
 The algo may, depending on k, shift the current (non-empty) window if extending it does not increase the frequency.
 Note that we are to return the longest length only.
-A substring is valid if its length minus the number of occurences of its most frequent letter(s) is less than or equal to k.
+A substring is valid if its length minus the number of occurences of its most frequent letter(s), i.e. the minimum number of operations it needs, is less than or equal to k.
 '''
 
 class Solution:
