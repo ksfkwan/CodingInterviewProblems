@@ -30,5 +30,5 @@ class Solution:
 Try 'ADABACDAAAA'.
 To have a better understanding of an algorithm in the future, you may want to think about how it is better than another one.
 This algorithm initially searches for the first valid substring with a length of 1, then the the first valid substring with a length of 2 and so on.
-The position of the first element of the first valid substring with a length of k + 1 if it exists must be greater than that of the first element of the first valid substring with a length of k.
+The position of the first element of the first valid substring with a length of m + 1 if it exists must be greater than that of the first element of the first valid substring with a length of m.
 '''
