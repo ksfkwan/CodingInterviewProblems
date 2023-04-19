@@ -29,5 +29,5 @@ class Solution:
 '''
 Try 'ADABACDAAAA'.
 To have a better understanding of an algorithm in the future, you may want to think about how it is better than another one.
-This algorithm initially searches for the first valid substring with a length of 1, then the the first substring with a length of 2 and so on.
+This algorithm initially searches for the first valid substring with a length of 1, then the the first valid substring with a length of 2 and so on.
 '''
