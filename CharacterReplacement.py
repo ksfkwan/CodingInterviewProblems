@@ -14,7 +14,7 @@ class Solution:
         result = 0
         for right in range(len(s)): # The right pointer is the protagonist.
             dictionary[s[right]] = 1 + dictionary.get(s[right], 0)
-            frequency = max(frequency, dictionary[s[right]]) # frequency <= right - left + 1
+            frequency = max(frequency, dictionary[s[right]]) # right - left + 1 >= frequency since there are times when right - left + 1 is the only variable increasing.
             
             
             if (right - left + 1) - frequency > k:
