@@ -12,7 +12,7 @@ class Solution:
         frequency = 0
         left = 0
         result = 0
-        for right in range(len(s)): # The right pointer is the protagonist.
+        for right in range(len(s)): # The right pointer is the protagonist and the first iteration is trivial.
             dictionary[s[right]] = 1 + dictionary.get(s[right], 0)
             frequency = max(frequency, dictionary[s[right]]) # right - left + 1 >= frequency since there are times when right - left + 1 is the only variable increasing.
             # Sometimes it reaches a point where right - left + 1 - frequency = k. This is when things get interesting.
