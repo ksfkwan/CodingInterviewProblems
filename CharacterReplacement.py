@@ -32,4 +32,5 @@ To have a better understanding of an algorithm in the future, you may want to th
 This algorithm initially searches for the first valid substring with a length of 1, then immediately the first valid substring with a length of 2 and so on.
 The position of the last element of the first valid substring with a length of m + 1 if it exists must be greater than that of the last element of the first valid substring with a length of m.
 If there is a valid window with a length of m + 1, then there is a valid window with a length of m.
+The leftmost and the rightmost elements determine the frequency of the next window. 
 '''
