@@ -1,5 +1,5 @@
 '''
-You are given a non-empty list of anagrams consisting of lowercase English letters.
+Given a non-empty list of anagrams consisting of lowercase English letters, group them.
 '''
 
 from typing import List
