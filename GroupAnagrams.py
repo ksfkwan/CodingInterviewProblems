@@ -11,4 +11,4 @@ class Solution:
             for c in s: # The list is modified only if the string is non-empty.
                 l[ord(c) - ord("a")] += 1
             d.setdefault(tuple(l), []).append(s) # Neither a list nor a dictionary can serve as a dictionary key as they are mutable.
-        return list(d.values())
+        return list(d.values()) # It returns a non-empty list of non-empty lists.
