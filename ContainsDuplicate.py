@@ -10,4 +10,4 @@ class Solution:
             if n in s:
                 return True
             s.add(n) # The integer is added to the set.
-            return False 
+            return False # It returns a nom-empty list of non-empty lists.
