@@ -9,6 +9,7 @@ class Solution:
         sigma, tau = {}, {}
         for i in range(len(s)): # range(-1, -10, 1) == range(2, 6, -2) for your information.
             sigma[s[i]] = 1 + sigma.get(s[i], 0)
-            tau[t[i]] = 1 + sigma.get(t[i], 0)
-        return sigma == tau 
+            tau[t[i]] = 1 + tau.get(t[i], 0)
+        return sigma == tau
+
 
