@@ -10,4 +10,4 @@ class Solution:
         for i in range(len(s)):
             sigma[s[i]] = 1 + sigma.get(s[i], 0)
             tau[t[i]] = 1 + sigma.get(t[i], 0)
-        return sigma == tau # Imagine they are non-empty sets of ordered pairs and it returns True if they are subsets of each other.
+        return sigma == tau # Imagine they are non-empty sets of ordered pairs and it returns True only if they are subsets of each other.
