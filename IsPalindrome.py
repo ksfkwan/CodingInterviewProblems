@@ -20,7 +20,7 @@ class Solution:
             # Either l < r or l == r after the above two while loops.
             # If l < r, then both s[l] and s[r] are alphanumeric.
             if s[l].lower() != s[r].lower(): # The method also converts uppercase Greek letters into lowercase ones.
-            # But what matters is the method returns one-character string if it is given one.
+            # But what matters is the method returns a one-character string if it is given one.
                 return False
             l += 1
             r -= 1
