@@ -14,10 +14,12 @@
 #         func(*args, **kwargs) 
 #         print(args, kwargs)  
 #     return wrapper
-# def f(a, b):
+# def f(a=[5], b=[6]):
+#     print(a, b)
 #     a.append(3)
 #     b.append(4)
 # f = decorate(f)
+# f([1], b=[2])
 # f([1], b=[2])
 
 import time
