@@ -9,6 +9,17 @@
 # g()
 # h()
 
+# def decorate(func):
+#     def wrapper(*args, **kwargs):
+#         func(*args, **kwargs) 
+#         print(args, kwargs)  
+#     return wrapper
+# def f(a, b):
+#     a.append(3)
+#     b.append(4)
+# f = decorate(f)
+# f([1], b=[2])
+
 import time
 def timer(func):
     def wrapper(*args, **kwargs):
