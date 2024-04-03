@@ -12,5 +12,13 @@
 import time
 def timer(func):
     def wrapper(*args, **kwargs):
-    	    
+        a = time.time()
+        output =
+        b =
+        print a - b
+        return output
     return wrapper
+def f(a, b):
+    return a + b
+f = timer(f)
+f(1, 2)
