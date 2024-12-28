@@ -21,3 +21,5 @@ class Queue:
             current_node.next = None
         if self.head is None:
             self.tail = None
+    def has_elements(self):
+        return self.head is not None
